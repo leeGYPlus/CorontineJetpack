@@ -8,6 +8,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;
@@ -37,4 +39,20 @@ public class Dashboard {
             }
         });
     }
+
+//    private void show(){
+//        CoroutineKt.displayText2(new Continuation<String>() {
+//            @NotNull
+//            @Override
+//            public CoroutineContext getContext() {
+//                return null;
+//            }
+//
+//            @Override
+//            public void resumeWith(@NotNull Object o) {
+//
+//            }
+//
+//        });
+//    }
 }

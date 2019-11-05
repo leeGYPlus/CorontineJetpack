@@ -33,10 +33,7 @@ class ArticleListActivity : AppCompatActivity() {
         when {
             page > 10 -> page = 1
         }
-        viewModel.fetchArticleList(page)
+        viewModel.fetchArticleList2(page)
         page++
-
     }
-
-
 }

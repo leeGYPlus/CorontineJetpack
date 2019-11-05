@@ -24,3 +24,15 @@ fun displayText(textView: TextView) = runBlocking {
         }.await()
     }
 }
+fun displayText2() = runBlocking {
+    launch(Dispatchers.Main) {
+        val test = async(AndroidCommonPool) {
+            okHttpClient.newCall(request).execute().body?.toString()
+        }.await()
+    }
+}
+
+suspend fun gdg()
+{
+
+}
